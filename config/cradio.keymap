@@ -53,7 +53,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -81,7 +88,7 @@
 &kp EXCL     &kp AT            &kp HASH           &kp DLLR              &kp PRCNT                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp SLASH
 &kp CARET    &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ASTERISK
 &bootloader  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp EQUAL
-                                                  &trans                &tog 3                   &tog 4        &kp NUMBER_0
+                                                  &trans                &trans                   &kp NUMBER_0  &trans
             >;
         };
 
@@ -90,16 +97,16 @@
 &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &trans  &kp C_MUTE    &kp C_PREV
 &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &trans  &kp C_VOL_UP  &kp C_PP
 &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans  &kp C_VOL_DN  &kp C_NEXT
-                          &trans   &trans          &tog 0        &trans
+                          &trans   &trans          &to 0         &trans
             >;
         };
 
         mouse {
             bindings = <
-&tog 0  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
 &trans  &trans    &trans     &trans     &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans    &trans     &trans     &trans        &mkp LCLK       &mkp MCLK       &mkp RCLK     &mkp MB4         &mkp MB5
-                             &kp SPACE  &kp LSHIFT    &tog 0          &trans
+                             &kp SPACE  &kp LSHIFT    &to 0           &trans
             >;
         };
     };
