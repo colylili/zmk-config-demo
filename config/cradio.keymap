@@ -67,28 +67,28 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W       &kp E        &kp R         &kp T          &kp Y              &kp U        &kp I        &kp O       &kp P
-&kp A      &ht LALT S  &ht LCTRL D  &ht LGUI F    &kp G          &kp H              &ht RGUI J   &ht RCTRL K  &ht RALT L  &kp SEMICOLON
-&kp LA(Z)  &kp X       &kp C        &kp V         &kp B          &kp N              &kp M        &kp COMMA    &kp DOT     &kp RA(SLASH)
-                                    &lt 2 RETURN  &kp LC(TAB)    &kp LS(BACKSPACE)  &lt 1 SPACE
+&kp Q  &kp W       &kp E        &kp R         &kp T             &kp Y    &kp U        &kp I        &kp O       &kp P
+&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F    &kp G             &kp H    &ht RGUI J   &ht RCTRL K  &ht RALT L  &kp SEMICOLON
+&kp Z  &kp X       &kp C        &kp V         &kp B             &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH
+                                &lt 2 RETURN  &kp LEFT_SHIFT    &kp TAB  &lt 1 SPACE
             >;
         };
 
         right_layer {
             bindings = <
-&trans     &trans  &kp ESCAPE  &trans  &trans           &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &bootloader
-&trans     &trans  &kp DELETE  &trans  &trans           &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&kp TILDE  &trans  &kp CAPS    &trans  &kp BACKSPACE    &trans         &trans          &trans          &kp PIPE         &kp BACKSLASH
-                               &trans  &kp ESC          &trans         &trans
+&kp PIPE           &kp BACKSLASH     &kp MINUS     &kp UNDERSCORE  &trans           &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PLUS
+&kp TILDE          &kp GRAVE         &kp CAPSLOCK  &kp DELETE      &kp BACKSPACE    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL
+&kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans        &trans          &trans           &trans         &trans          &trans          &trans           &bootloader
+                                                   &trans          &kp ESC          &trans         &trans
             >;
         };
 
         left_layer {
             bindings = <
-&kp EXCL   &kp AT            &kp HASH           &kp DLLR              &kp PRCNT                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp SLASH
-&kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ASTERISK
-&kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp EQUAL
-                                                &trans                &trans                   &tog 4        &kp NUMBER_0
+&kp EXCL     &kp AT            &kp HASH           &kp DLLR              &kp PRCNT                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp SLASH
+&kp CARET    &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ASTERISK
+&bootloader  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp EQUAL
+                                                  &trans                &trans                   &tog 4        &kp NUMBER_0
             >;
         };
 
