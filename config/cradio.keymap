@@ -53,14 +53,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -88,7 +81,7 @@
 &kp EXCL     &kp AT            &kp HASH           &kp DLLR              &kp PRCNT                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp SLASH
 &kp CARET    &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ASTERISK
 &bootloader  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp EQUAL
-                                                  &trans                &trans                   &tog 4        &kp NUMBER_0
+                                                  &trans                &tog 3                   &tog 4        &kp NUMBER_0
             >;
         };
 
